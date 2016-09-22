@@ -5,6 +5,7 @@
 ##Extension=selection PDF format (*.pdf *.PDF);JPG format (*.jpg *.JPG);JPEG format (*.jpeg *.JPEG);TIF format (*.tif *.TIF);TIFF format (*.tiff *.TIFF);PNG format (*.png *.PNG);BMP format (*.bmp *.BMP);ICO format (*.ico *.ICO);PPM format (*.ppm *.PPM));XBM format (*.xbm *.XBM);XPM format (*.xpm *.XPM)
 ##nomodeler
 
+# Author: Germán Carrillo (GeoTux), 2016
 import os.path
 import glob 
 import qgis
