@@ -1,3 +1,5 @@
+##QGIS_Projects=group 
+##Batch_Export_Project_Composers=name
 ##Projects_folder=folder
 ##Output_folder=folder
 ##Extension=selection PDF format (*.pdf *.PDF);JPG format (*.jpg *.JPG);JPEG format (*.jpeg *.JPEG);TIF format (*.tif *.TIF);TIFF format (*.tiff *.TIFF);PNG format (*.png *.PNG);BMP format (*.bmp *.BMP);ICO format (*.ico *.ICO);PPM format (*.ppm *.PPM));XBM format (*.xbm *.XBM);XPM format (*.xpm *.XPM)
