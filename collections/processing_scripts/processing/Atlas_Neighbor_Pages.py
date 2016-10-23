@@ -15,7 +15,7 @@ from processing.core.GeoAlgorithmExecutionException import GeoAlgorithmExecution
 layer = dataobjects.getObjectFromUri(Rectangular_grid_layer)
 
 if not Rectangular_grid_layer or not Page_number_field:
-    raise GeoAlgorithmExecutionException("Please specify both, projects folder and output folder.")
+    raise GeoAlgorithmExecutionException("Please specify both, a grid layer and the page number field.")
 
 layer.startEditing()
 layer.dataProvider().addAttributes(
