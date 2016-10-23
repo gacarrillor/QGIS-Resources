@@ -1,6 +1,6 @@
 ##Print_Composer=group
 ##Neighbor_pages_for_Atlas=name
-##Rectangular_grid_layer=vector
+##Rectangular_grid_layer=vector polygons
 ##Page_number_field=field Rectangular_grid_layer
 
 # Author: German Carrillo (GeoTux), 2016
