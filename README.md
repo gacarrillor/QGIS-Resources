@@ -15,9 +15,15 @@ My collection of QGIS resources shared with the community. Hope you find them us
 
    This script calculates neighbor (right, left, above, below) grid cells (pages) to include them as labels in Atlas current page.
    See original question at GIS.SE: http://gis.stackexchange.com/questions/214300/how-to-determine-neighbouring-tile-ids-in-qgis
-   
+
    (Image by Ian Turton)
    ![Neighbor pages for Atlas][1]
+
+ - **Lines_Intersection.py**
+
+   This script allows you to choose whether to keep all fields from input and intersect layer, or choose individual fields from each layer.
+   This script will not be necessary if Processing adopts a Pull Request I've proposed.
+   The script is heavily based on the qgis:lineintersections by Victor Olaya.
 
 LICENSE: GNU GPL v.3.0
 
