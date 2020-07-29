@@ -1,7 +1,6 @@
 # QGIS-Resources
 My collection of QGIS resources shared with the community. Hope you find them useful!
 
-
 ## Collections:
 
 ### Processing Scripts (PyQGIS) by Germán Carrillo
@@ -11,21 +10,8 @@ My collection of QGIS resources shared with the community. Hope you find them us
    This script allows you to export the composers of all the QGIS projects that are inside a base folder.
    It's based on the 'Maps Printer' plugin by [Harrissou Sant-anna](https://github.com/DelazJ), which is required to run the script.
 
- - **Atlas_Neighbor_Pages.py**
+ - **processing_script_edit_in_place.py**
 
-   This script calculates neighbor (right, left, above, below) grid cells (pages) to include them as labels in Atlas current page.
-   See original question at GIS.SE: http://gis.stackexchange.com/questions/214300/how-to-determine-neighbouring-tile-ids-in-qgis
-
-   (Image by Ian Turton)
-   ![Neighbor pages for Atlas][1]
-
- - **Lines_Intersection.py**
-
-   This script allows you to choose whether to keep all fields from input and intersect layer, or choose individual fields from each layer.
-   This script will not be necessary if Processing adopts a Pull Request I've proposed.
-   The script is heavily based on the qgis:lineintersections by Victor Olaya.
+   This script can be taken as an example of a script that edits a layer in-place. That is, a script that modifies features from the input layer, instead of generating a copy of the layer.     
 
 LICENSE: GNU GPL v.3.0
-
-
- [1]: https://i.stack.imgur.com/nRkC5.png
