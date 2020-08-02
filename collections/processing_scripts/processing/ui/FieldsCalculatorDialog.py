@@ -8,6 +8,7 @@
     Copyright            : (C) 2013 by Alexander Bruy
                            (C) 2018 Adapted by Germán Carrillo (BSF Swissphoto)
     Email                : alexander dot bruy at gmail dot com
+                           gcarrillo@linuxmail.org
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *

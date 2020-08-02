@@ -8,6 +8,7 @@
     Copyright            : (C) 2012 by Victor Olaya
                            (C) 2018 Adapted by Germán Carrillo (BSF Swissphoto)
     Email                : volayaf at gmail dot com
+                           gcarrillo@linuxmail.org
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -26,6 +27,10 @@ __copyright__ = '(C) 2012, Victor Olaya'
 
 __revision__ = '$Format:%H$'
 
+import os
+import sys
+
+from qgis.utils import plugins
 from qgis.PyQt.QtCore import QVariant
 from qgis.core import (QgsExpression,
                        QgsExpressionContext,
@@ -40,10 +45,22 @@ from qgis.core import (QgsExpression,
                        QgsProcessingParameterExpression,
                        QgsProcessingParameterString,
                        QgsProcessingException,
-                       QgsProcessingOutputVectorLayer)
+                       QgsProcessingOutputVectorLayer,
+                       QgsApplication)
 from processing.algs.qgis.QgisAlgorithm import QgisAlgorithm
 
-from .ui.FieldsCalculatorDialog import FieldsCalculatorDialog
+# Workaround to be able to import FieldsCalculatorDialog (needed if using 'QGIS Reource Sharing')
+base_dir = os.path.dirname(QgsApplication.qgisAuthDatabaseFilePath())
+sys.path.append(os.path.join(base_dir, "/python/plugins"))
+from qgis_resource_sharing.resource_sharing.utilities import local_collection_path
+p = plugins["qgis_resource_sharing"]
+c = p.dlg.collection_manager.get_installed_collections('https://github.com/gacarrillor/QGIS-Resources.git')
+cid = list(c.keys())[0]
+scripts_path = os.path.join(local_collection_path(cid), 'processing')
+sys.path.append(scripts_path)
+# End of workaround
+
+from ui.FieldsCalculatorDialog import FieldsCalculatorDialog
 
 
 class FieldsCalculator(QgisAlgorithm):
