@@ -14,8 +14,8 @@ My collection of QGIS resources shared with the community. Hope you find them us
 
    This script can be taken as an example of a script that edits a layer in-place. That is, a script that modifies features from the input layer, instead of generating a copy of the layer.     
 
- - **field_calculator_for_input_layer.py**
- 
-    This script can calculate values from QGIS expression in the input layer. That is, unlike the native 'Field Calculator' algorithm that comes within QGIS, this script does not create a new layer for its calculations. 
+ - **vector_overlaps_by_class.py**
+
+    Extends `native:calculatevectoroverlaps` (Overlap analysis) to accept a single overlay layer with classes and generate a table with overlap areas and percentages by class. 
 
 LICENSE: GNU GPL v.3.0
