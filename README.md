@@ -1,7 +1,9 @@
 # QGIS-Resources
 My collection of QGIS resources shared with the community. Hope you find them useful!
 
-## Collections:
+LICENSE: GNU GPL v.3.0
+
+## Collections
 
 ### Processing Scripts (PyQGIS) by Germán Carrillo
 
@@ -18,4 +20,21 @@ My collection of QGIS resources shared with the community. Hope you find them us
 
     Extends `native:calculatevectoroverlaps` (Overlap analysis) to accept a single overlay layer with classes and generate a table with overlap areas and percentages by class. 
 
-LICENSE: GNU GPL v.3.0
+
+## Installation
+
+1. Install the `QGIS Resource Sharing` plugin from QGIS plugin repository.
+2. Open the `QGIS Resource Sharing`'s main window and go to `Settings` --> `Add repository...`.
+3. Set the repository name and URL like this:
+   + Name: `Germap's repo`
+   + URL: https://github.com/gacarrillor/QGIS-Resources.git
+   
+   ![image](https://user-images.githubusercontent.com/652785/153315981-6c114258-168b-4784-b719-e9f065cabf49.png)
+4. Still in the `QGIS Resource Sharing`'s main window, go to `All collections` and search for `pyqgis`.
+5. Select the item "Processing Scripts (PyQGIS) by Germán Carrillo" and click on `Install`.
+
+That's it! A confirmation window should tell you you have installed several Processing scripts, which you can access from the Processing panel in QGIS. Enjoy!
+   
+   
+
+
