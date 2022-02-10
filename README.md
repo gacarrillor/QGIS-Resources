@@ -7,14 +7,18 @@ LICENSE: GNU GPL v.3.0
 
 ### Processing Scripts (PyQGIS) by Germán Carrillo
 
- - **export_composers_of_multiple_projects.py**
+- **copy_vector_layer.py**
 
-   This script allows you to export the composers of all the QGIS projects that are inside a base folder.
-   It's based on the 'Maps Printer' plugin by [Harrissou Sant-anna](https://github.com/DelazJ), which is required to run the script.
+   Use this script to create a full copy of a vector layer. Handy when you need to modify data but you feel safer testing the modifications on a copy first.
 
  - **edit_in_place_script.py**
 
-   This script can be taken as an example of a script that edits a layer in-place. That is, a script that modifies features from the input layer, instead of generating a copy of the layer.     
+   This script can be taken as an example of a script that edits a layer in-place. That is, a script that modifies features from the input layer, instead of generating a copy of the layer.
+
+ - **export_composers_of_multiple_projects.py**
+
+   This script allows you to export the composers of all the QGIS projects that are inside a base folder.
+It's based on the 'Maps Printer' plugin by [Harrissou Sant-anna](https://github.com/DelazJ), which is required to run the script.
 
  - **vector_overlaps_by_class.py**
 
@@ -34,7 +38,7 @@ LICENSE: GNU GPL v.3.0
 5. Select the item "Processing Scripts (PyQGIS) by Germán Carrillo" and click on `Install`.
 
 That's it! A confirmation window should tell you you have installed several Processing scripts, which you can access from the Processing panel in QGIS. Enjoy!
-   
+
    
 
 
